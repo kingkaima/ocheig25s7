@@ -1,2 +1,2 @@
-# ocheig25s7
-#Gaddiel Ochei "Ochei" Unknown 
+# ocheig25s7 "ochei": unknown word
+#Gaddiel Ochei "Ochei" Unknown word
