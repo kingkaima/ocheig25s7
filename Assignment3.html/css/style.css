@@ -60,5 +60,12 @@ Use some padding to push the content away from the border.
 ul{
     background-color: #eeeeee;
     border:solid 5px purple;
-    padding: 20px;
+    padding: 4em;
+}
+/*
+Make the links green on hover.
+
+*/
+a:hover{
+    color:green;
 }
