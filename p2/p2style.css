@@ -13,5 +13,8 @@ div{
     display:table;
     vertical-align: middle;
 
+    /* Center the box horizontally */
+    margin:0 auto;
+
     
 }
