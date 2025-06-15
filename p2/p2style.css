@@ -33,5 +33,11 @@ div{
     border-radius: 8px; /* subtle border radius of 8px */
     border: 1px solid #c62828;  /* Slightly darker red border than base */
 
+     /* grading to around 0.2 opacity by 30% along*/
+    background-image: linear-gradient(red); /*A linear semi-transparent black gradient that goes toward the bottom right corner.*/
+
+
+
+
     
 }
