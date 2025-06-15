@@ -10,11 +10,20 @@ div{
     width:200px;
     /*A reasonable height for a large box, centering the text vertically in the process*/
     height:100px;
-    display:table;
+    display:flex;
+    align-items:center;
     vertical-align: middle;
+    justify-content: center;
+    margin:auto;
 
     /* Center the box horizontally */
-    margin:0 auto;
-    /*center the text within the box*/
+    margin: 0 auto;
+    /*margin:0 200px;*/
+    /*Center the text within the box*/
+    display:flex;
+    align-items:center; /* vertical centering */
+    justify-content: center; /* horizontal centering of text */
     text-align:center;
+    font-size:1.1rem; /* around 17.6px if 1rem-15px */
+    
 }
