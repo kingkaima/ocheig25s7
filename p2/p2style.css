@@ -25,5 +25,11 @@ div{
     justify-content: center; /* horizontal centering of text */
     text-align:center;
     font-size:1.1rem; /* around 17.6px if 1rem-15px */
+    background-color: red; /*background color for text box changed to red */
+     /* Bright white for contrast */
+    color: #FFFFFF;         /* Bright white for contrast */
+    text-shadow: 0 0 2px #000; /* Black shadow for added clarity */
+    padding: 2rem;
+
     
 }
