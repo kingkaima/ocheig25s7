@@ -30,6 +30,7 @@ div{
     color: #FFFFFF;         /* Bright white for contrast */
     text-shadow: 0 0 2px #000; /* Black shadow for added clarity */
     padding: 2rem;
+    border-radius: 6px; /* subtle border radius of 6px */
 
     
 }
