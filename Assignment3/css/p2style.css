@@ -1,0 +1,60 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+
+div{
+    /*A reasonable width for a large box say around 200 pixels*/
+    border:20px solid black;
+    width:200px;
+    /*A reasonable height for a large box, centering the text vertically in the process*/
+    height:100px;
+    display:flex;
+    align-items:center;
+    vertical-align: middle;
+    justify-content: center;
+    margin:auto;
+
+    /* Center the box horizontally */
+    margin: 0 auto;
+    /*margin:0 200px;*/
+    /*Center the text within the box*/
+    display:flex;
+    align-items:center; /* vertical centering */
+    justify-content: center; /* horizontal centering of text */
+    text-align:center;
+    font-size:1.1rem; /* around 17.6px if 1rem-15px */
+    background-color: red; /*background color for text box changed to red */
+     /* Bright white for contrast */
+    color: #FFFFFF;         /* Bright white for contrast */
+    text-shadow: 0 0 2px #000; /* Black shadow for added clarity */
+    padding: 2rem;
+    border-radius: 8px; /* subtle border radius of 8px */
+    border: 1px solid #c62828;  /* Slightly darker red border than base */
+
+     /* grading to around 0.2 opacity by 30% along*/
+    background-image: linear-gradient(red); /*A linear semi-transparent black gradient that goes toward the bottom right corner.*/
+
+      .shadow-box {
+      width: 250px;
+      height: 250px;
+      background-color: #e53935; /* Base red */
+      border-radius: 12px;
+      border: 1px solid #b71c1c; /* Slightly darker border */
+      position: relative;
+      overflow: hidden;
+
+      
+
+
+      
+       
+
+
+
+
+
+    
+}
+}
