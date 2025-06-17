@@ -36,8 +36,25 @@ div{
      /* grading to around 0.2 opacity by 30% along*/
     background-image: linear-gradient(red); /*A linear semi-transparent black gradient that goes toward the bottom right corner.*/
 
+      .shadow-box {
+      width: 250px;
+      height: 250px;
+      background-color: #e53935; /* Base red */
+      border-radius: 12px;
+      border: 1px solid #b71c1c; /* Slightly darker border */
+      position: relative;
+      overflow: hidden;
+
+      
+
+
+      
+       
+
+
 
 
 
     
+}
 }
