@@ -90,3 +90,53 @@ a:hover{
 color:#a66;
 }
 
+/*  Indentation for first paragraph after section heading */
+section h2 + p,
+section h3 + p {
+  text-indent: 20px;
+}
+
+/* Styling the links attached to their highlighted text. */
+a, a:visited {
+  color: #a66; /* Adjust to match horizontal bars on your page */
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: #a66;
+  text-decoration: none;
+  outline: none;
+}
+
+a:active {
+  color: #ffffff;
+  background-color: #a66;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Creating an external tag for the link */
+a[target="_blank"]::after {
+  content: url('https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f517.svg'); /* or use your own icon */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/*  Lists styling */
+ul, ol {
+  margin: 1.6rem 0;
+  padding-left: 2rem;
+}
+
+li {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  list-style-type: square; /* Each list item is assigned a square as it's list type.*/
+  /* list-style-image: url('images/custom-bullet.png'); */
+}
+/* WRITE YOUR CODE BELOW HERE */
