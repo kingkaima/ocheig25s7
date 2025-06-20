@@ -61,4 +61,32 @@ nav a {
   color: #000;               /* Black text */
   display: block;            /* Makes the link fill the entire list item */
 }
-/* WRITE YOUR CODE BELOW HERE */
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h2 ul{
+text-decoration: underline;
+list-style-type: circle;
+color:#a66;
+}
+
+a:hover{
+color:#a66;
+}
+
