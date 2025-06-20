@@ -1,0 +1,66 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+ nav ul {
+  list-style: none;   /* Remove default bullets */
+  padding: 10px;         /* Remove default padding */
+  margin: 0;
+  width: fit-content; /* Adjust width to content */
+}
+
+nav li {
+  border: 2px solid #a66;    /* Individual border for each list item */
+  margin-bottom: 8px;        /* Space between items */
+  padding: 10px;             /* Inner spacing */
+  background-color: #f9f9f9; /* Optional: light background */
+}
+
+nav a {
+  text-decoration: none;     /* No underline */
+  color: #a66;               /* Brown text */
+  display: block;            /* Makes the link fill the entire list item */
+}
+
+
+/* WRITE YOUR CODE BELOW HERE */
