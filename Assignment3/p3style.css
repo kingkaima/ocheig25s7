@@ -42,25 +42,23 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
- nav ul {
-  list-style: none;   /* Remove default bullets */
-  padding: 10px;         /* Remove default padding */
-  margin: 0;
-  width: fit-content; /* Adjust width to content */
-}
+ nav ul{
+  list-style: none;/*Remove default bullets*/
+  padding: 10px;  /*Remove default padding */
+  margin:0;
+  width:fit-content; /* Adjust width to content */
+ }
 
 nav li {
-  border: 2px solid #a66;    /* Individual border for each list item */
-  margin-bottom: 8px;        /* Space between items */
-  padding: 10px;             /* Inner spacing */
-  background-color: #f9f9f9; /* Optional: light background */
+  border: 2px solid #a66; /*Individual border for each list item */
+  margin-bottom: 6px; /*Space between items */
+  padding: 10px; /*Optional light background */
+  background-color: #f9f9f9;
 }
 
 nav a {
   text-decoration: none;     /* No underline */
-  color: #a66;               /* Brown text */
+  color: #000;               /* Black text */
   display: block;            /* Makes the link fill the entire list item */
 }
-
-
 /* WRITE YOUR CODE BELOW HERE */
