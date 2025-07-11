@@ -34,9 +34,9 @@ randomize.addEventListener('click', result);
 
 function result() {
     let newStory = storyText;
-    let xItem = randomValueFromArray(insertX);
-    let yItem = randomValueFromArray(insertY);
-    let zItem = randomValueFromArray(insertZ);
+    let xItem = randomValueFromArray(insertx);
+    let yItem = randomValueFromArray(inserty);
+    let zItem = randomValueFromArray(insertz);
 
     newStory = newStory.replace(':insertx:',xItem);
     newStory = newStory.replace(':insertx:',xItem);//Replace second occurence
@@ -58,6 +58,6 @@ function result() {
 
   }
 
-  story.textContent = ;
+  story.textContent =newStory ;
   story.style.visibility = 'visible';
 }
