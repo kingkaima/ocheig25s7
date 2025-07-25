@@ -28,57 +28,37 @@ class Ball {
     this.size = size;
   }
 
-  draw(ctx) {
+  draw() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
   }
 
-  update(canvasWidth, canvasHeight) {
-    if ((this.x + this.size) >= canvasWidth || (this.x - this.size) <= 0) {
+  update() {
+    if ((this.x + this.size) >= width || (this.x - this.size) <= 0) {
       this.velX = -this.velX;
     }
 
-    if ((this.y + this.size) >= canvasHeight || (this.y - this.size) <= 0) {
+    if ((this.y + this.size) >= height || (this.y - this.size) <= 0) {
       this.velY = -this.velY;
     }
 
     this.x += this.velX;
     this.y += this.velY;
   }
-}
-  update() {
-  if (this.x + this.size >= width) {
-    this.velX = -this.velX;
+
+  collisionDetect() {
+    for (const ball of balls) {
+      if (this !== ball) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + ball.size) {
+          ball.color = this.color = randomRGB();
+        }
+      }
+    }
   }
-
-  if (this.x - this.size <= 0) {
-    this.velX = -this.velX;
-  }
-
-  if (this.y + this.size >= height) {
-    this.velY = -this.velY;
-  }
-
-  if (this.y - this.size <= 0) {
-    this.velY = -this.velY;
-  }
-
-  this.x += this.velX;
-  this.y += this.velY;
-}
-
-
-
-
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
-
-function randomRGB() {
-  const r = random(0, 255);
-  const g = random(0, 255);
-  const b = random(0, 255);
-  return `rgb(${r},${g},${b})`;
 }
