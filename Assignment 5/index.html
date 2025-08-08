@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bears: Facts & Fun</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Accessible navigation: changed from <div class="nav"> to <nav> -->
+  <header>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#article">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#table">Bear Data</a></li>
+      </ul>
+    </nav>
+
+    <!-- Search form with visually hidden label for screen readers -->
+    <form action="#" method="get" class="search-form">
+      <label for="search" class="sr-only">Search the site</label>
+      <input id="search" type="search" name="q" placeholder="Search..." />
+      <button type="submit">Go</button>
+    </form>
+  </header>
+
+  <!-- Main article with proper semantic headings -->
+  <main id="article">
+    <h1>Bears: Majestic Creatures of the Wild</h1>
+    <p>Bears are large mammals that can be found across North America, South America, Europe, and Asia.</p>
+
+    <h2>Types of Bears</h2>
+    <p>The most common types include the brown bear, American black bear, and polar bear.</p>
+
+    <!-- Images now have alt text for screen readers -->
+    <section id="gallery">
+      <h2>Bear Gallery</h2>
+      <img src="brown-bear.jpg" alt="A brown bear standing in a forest clearing">
+      <img src="polar-bear.jpg" alt="A polar bear walking across Arctic ice">
+    </section>
+
+    <!-- Accessible audio player -->
+    <section id="audio">
+      <h2>Bear Sounds</h2>
+      <audio controls>
+        <source src="bear-growl.mp3" type="audio/mpeg">
+        <source src="bear-growl.ogg" type="audio/ogg">
+        <!-- Text alternative for hearing-impaired users -->
+        <p>Your browser does not support audio. <a href="bear-growl-transcript.txt">Read the transcript</a>.</p>
+      </audio>
+    </section>
