@@ -52,3 +52,61 @@
         <p>Your browser does not support audio. <a href="bear-growl-transcript.txt">Read the transcript</a>.</p>
       </audio>
     </section>
+    <!-- Accessible data table -->
+    <section id="table">
+      <h2>Bear Population Data</h2>
+      <table aria-describedby="table-desc">
+        <caption id="table-desc">Bear species and estimated global population</caption>
+        <thead>
+          <tr>
+            <th scope="col">Species</th>
+            <th scope="col">Population</th>
+            <th scope="col">Conservation Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Brown Bear</th>
+            <td>200,000</td>
+            <td>Least Concern</td>
+          </tr>
+          <tr>
+            <th scope="row">Polar Bear</th>
+            <td>26,000</td>
+            <td>Vulnerable</td>
+          </tr>
+          <tr>
+            <th scope="row">Giant Panda</th>
+            <td>1,864</td>
+            <td>Vulnerable</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Comment form with proper label associations -->
+    <section id="comments">
+      <h2>Leave a Comment</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text">
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment"></textarea>
+
+        <button type="submit">Post Comment</button>
+      </form>
+
+      <!-- Show/hide comments button now keyboard accessible -->
+      <button id="toggle-comments" aria-expanded="false" aria-controls="comment-list">
+        Show Comments
+      </button>
+      <ul id="comment-list" hidden>
+        <li>Great article on bears!</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
